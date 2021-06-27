@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catskill_white"
+    tools:context=".BSHittingContainer">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cloud_burst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/skillBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="HITTING SKILLS"
+        android:textColor="@color/catskill_white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="340dp"
+        android:layout_height="620dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/titleDump"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="DUMP"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentTheServe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="Dumping is a method of scoring where the setter touches the ball over the net instead of setting it, or simply spikes it instead of setting it. While the physical aspect of this skill is not difficult, there is another, more difficult aspect. That is misdirection. If the dump is telegraphed to the opposing team, it will be relatively easy to , as the surprise aspect that gives the setter the advantage is now gone. It is important to make the opposing team believe that the setter is going to set the ball until it's already over the net."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleHardDriven"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="HARD-DRIVEN SPIKE"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentScoring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="This is a downward driven spike, relying fully on power to blast through the defense. This an effective method of scoring, however, what the spike has in power, it lacks in accuracy, and as a result can sometimes be easily blocked or received by a skilled defense. "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleOffSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="OFF-SPEED SPIKE"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentFloatServe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="This spike is the opposite of the Hard-Driven Spike. This type of spike relies on accuracy to spike the ball towards an open or undefended area of the opponent's court. However, due to the focus on accuracy, it lacks power, and as a result is an easy receive if anticipated."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleSlideAttack"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="SLIDE ATTACK"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentPlayingGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="This is a spike done after a one-legged push off in a lateral direction, in order to lose the blockers before the spike. This is a more difficult spike as it requires advanced  power and the ability to spike while moving through the air laterally."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleCrossCourt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="CROSS-COURT SHOT"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentJumpServe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="This is a spike that is hit from one side of the net, towards the opposite back corner of the opposing team's court. This is a diagonal spike done in order to avoid blockers, forcing a skilled DIG."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleLineShot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="LINE SHOT"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentSkyBall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="This is a spike hit directly along the opponent's sideline. Not only is this difficult to defend, as it requires extreme precision to keep it along the line without landing out of bounds, but can also force a block-out (a failed block where the ball goes out of bounds after hitting the blocker) or a poor receive that goes out of bounds due to the balls close proximity to the line."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleCutShot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="CUT SHOT"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentCutShot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="This is a spike somewhat similar to the cross court shot, except hit with a far sharper angle. The idea of this spike is to hit the ball as horizontally as possible, so that it never goes very far from the net, where it is extremely hard to receive the ball. This spike is effective against blockers as well, as the blockers directly face the spiker, meaning that they can only block shots hit forward, whereas a cut shot is hit sideways."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleOpenHand"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="OPEN-HAND TIP"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentOpenHand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="This is an open handed soft touch over the net, similar to a dropshot in  or squash, in order to catch the blockers and receivers off guard when they were expecting a spike. "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

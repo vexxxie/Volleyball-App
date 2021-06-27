@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catskill_white"
+    tools:context=".OverviewEventsContainer">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cloud_burst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageButton
+        android:id="@+id/eventsBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="IMPORTANT EVENTS"
+        android:textColor="@color/catskill_white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="340dp"
+        android:layout_height="620dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/event1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1900"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentTheServe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The year when the point system was adapted."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1910"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentScoring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="Elwood Brown introduced volleyball in the Philippines."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1912"
+                android:textAlignment="textStart"
+                android:textColor="@color/ic_launcher_background"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentFloatServe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The year when rotation system was adapted."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1916"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentPlayingGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="Set and Spike were introduced."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1917"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentJumpServe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The game was change from 21 to 25 points."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1918"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentSkyBall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The year when the players in the court fixed to 6 players per team. And the height of the net was 8 feet."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1920"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentCutShot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="Three hits per side and back row attack rules were instituted."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1921"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentOpenHand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The year when the center line was imposed."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1922"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/content9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The first YMCA National Championship was held in Brooklyn New York"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1924"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/content10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The year when Japan introduced the 9 – man team with 21 points to win a set."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1930"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/content11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The first two man beach game was played."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1934"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/content12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="The approval and recognition of national volleyball referees."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event13"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1964"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/content13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="Volleyball was included in the World Olympics in Tokyo, Japan."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/event14"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1996"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/content14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="20dp"
+                android:text="The first game of volleyball was played."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

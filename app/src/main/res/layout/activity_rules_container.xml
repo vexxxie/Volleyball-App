@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catskill_white"
+    tools:context=".R_RulesContainer">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cloud_burst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/ruleBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/norwester"
+        android:text="RULES AND REGULATIONS"
+        android:textColor="@color/catskill_white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="340dp"
+        android:layout_height="620dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/titleTheServe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="THE SERVE"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentTheServe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="- Server must serve from behind the restraining line ( end line ) until after contact.\n- Ball may be served underhand or overhand.\n- Ball must be clearly visible to opponents before serve. Served ball may graze the net and drop to the other side for point.\n- First game serve is determined by a volley, each subsequent game shall be served by the previous game loser.\n- Serve must be returned by a bump only. no setting or attacking a serve. "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+\
+
+            <Button
+                android:id="@+id/titleScoring"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="SCORING"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentScoring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="- Rally scoring will be used.\n- There will be a point scored on every score of the ball. \n-  Offense will score on a defense miss or out of bounds hit. \n- Defense will score on an offensive miss, out of bounds hit, or serve into the net. \n- Game will be played to 25 pts. \n- Must win by 2 points. "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleRotation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="ROTATION"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentRotation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="- Team will rotate each time they win the serve.\n- Players shall rotate in a clockwise manner.\n- There shall be 4-6 players on each side. "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titlePlayingGame"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="PLAYING THE GAME"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentPlayingGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="- Maximum of three hits per side.\n- Player may not hit the ball twice in succession ( A block is not considered a hit ). \n- Ball may be played off the net during a volley and on serve.\n-  A ball touching a boundary line is good.\n- A legal hit is contact with the ball by a player body above and including the waist which does not allow the ball to visibly come to a rest.\n- A player must not block or attack a serve.\n- If two or more players contact the ball simultaneously, it is considered one play and the players involved may not participate in the next play.\n- Switching positions will be allowed only between front line players (After the serve only).   "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleBasicViolations"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="BASIC VIOLATIONS"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/contentBasicViolations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="- Stepping on or over the line on a serve.\n- Failure to serve the ball over the net successfully. \n- Hitting the ball illegally (Carrying, Palming, Throwing, etc.).\n- Touches of the net with any part of the body while the ball is in play. If the ball is driven into the net with such force that it causes the net to contact an opposing player, no foul will be called, and the ball shall continue to be in play. \n- Reaching over the net, except under these conditions:\n1 - When executing a follow-through.\n2 - When blocking a ball which is in the opponents court but is being returned ( the blocker must not contact the ball until after the opponent who is attempting to return the ball makes contact). Except to block the third play.\n- Reaches under the net (if it interferes with the ball or opposing player).\n- Failure to serve in the correct order.\n- Blocks or spikes from a position which is clearly not behind the 10-foot line while in a back row position.       "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacilitiesNetPostContainer">
+
+        <View
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/cloud_burst"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/nPBackBtn"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_back_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/norwester"
+            android:text="NET AND POSTS"
+            android:textColor="@color/catskill_white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.562"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="370dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/net" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/titleHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="HEIGHT OF THE NET"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/contentHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="It is placed vertically over the center line. Top is set at the height of 2.43 meters for men and 2.24 for women\nNote: The height of the net may be varied for the specific age groups."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titleStructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="STRUCTURE OF THE NET"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/contentStructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="Net is 1 meter wide and 9.5 – 10 meter long (with 25-50cm on each side of the side bands), made of 10 centimeter square black mesh."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titleSideBands"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="SIDE BANDS"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/contentSideBands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="Two white bands have 5 centimeters (same width as the court lines) and 2 meter long fastened vertically to the net and placed above each side line."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titleAntenna"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="ANTENNA"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/contentAntenna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="A flexible rod, 1.80 meter long and 10milimeter in diameter, made of fiberglass or similar material."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titlePosts"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/outrageous_orange"
+                    app:backgroundTint="@null"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="POSTS"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentPosts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="20dp"
+                    android:text="Posts are placed at a distance of 0.50-1.00 meter outside the side lines. It is 2.55 meter high and preferably adjustable."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

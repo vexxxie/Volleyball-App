@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catskill_white"
+    tools:context=".E_EquipmentsSection">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cloud_burst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageButton
+        android:id="@+id/equipBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="EQUIPMENTS"
+        android:textColor="@color/catskill_white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="340dp"
+        android:layout_height="620dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/titleAnkle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="ANKLE BRACES"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentAnkle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/anklebraces"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:text="          While ankle braces aren't technically required, it is very important for people playing volleyball on a regular basis. Ankle injuries are the most common injuries that occur in volleyball, leading many veteran volleyball players and coaches to consider ankle braces as necessary accesories. The typical dimensions of ankle braces range from an ankle circumference of 10 inches to a circumference of 14 inches."
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleArm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="ARM SLEEVES"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentArm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/armsleeves"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Arm sleeves in volleyball are used for both comfort and protection. They can help to protect the arms from floor burn or can be used as compression sleeves for improved blood flow. Athletes may also wear them just because they like the style. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleBag"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="BAG"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentBag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bag"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Having a bag to keep a player's volleyball equipment together and organized is important, just as it is with any other sport. The more accessories and equipment a player has, the bigger the bag required. Along with a bigger bag for more storage space, many pockets are recommended. In volleyball, players typically use either a backpack or a duffle bag. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleBall"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="BALL"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentBall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ball"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Volleyballs have many more differences between each ball than expected. The main factor that differentiates each ball is whether they are used indoors or outdoors. One main difference between indoor and outdoor volleyballs is indoor volleyballs are molded together, while outdoor volleyballs are stitched together. Another major difference is the material. Indoor volleyballs are usually made of leather, while outdoor volleyballs are usually made of composite, water resistant material. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleBallHammock"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="BALL HAMMOCK"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentBallHammock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ballhammock"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          A volleyball hammock is used to hold volleyballs that are not being used. While they can be a great thing to buy for a player to use while practising on their own time, ball hammocks are more for coaches to buy for organized teams. The typical volleyball hammock holds 24 volleyballs, while some hammocks can hold up to as many as 40 volleyballs."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/titleBallPump"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="BALL PUMP"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentBallPump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ballpump"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          A typical ball pump that is used for other sports can be used in volleyball as well. Having a well pumped ball is important: too pumped up and it will hurt, too soft and it will not perform properly. While a player doesn't necessarily need to carry a pump around in their bag, it is good to have one at home to pump up a ball for practicing. However, a pump is important to have for coaches of organized teams.  "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleCart"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="CART"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cart"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          A volleyball cart is basically the same thing as a volleyball hammock, just shaped differently. They both have the same purpose of storing volleyballs. They even have the same price range when shopping online. Choosing between the two comes down to personal preference. The main difference between the two is carts are better for storage, while hammocks allow people to more quickly access multiple volleyballs at once."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleClipboard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="COACHES' CLIPBOARDS"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentClipboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/coachesclipboard"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Coaches in volleyball use clipboards to help show their team where to position themselves, where to hit the ball, and specific  to try and outsmart the other team. While there are specific clipboards for volleyball, a regular clipboard with paper on it or a small whiteboard can work just as well. That really depends on what a coach is willing to pay, and how serious they are of a coach.  "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleElbowPads"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="ELBOW PADS"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentElbowPads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/elbowpad"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          While elbow pads aren't as important for protection as knee pads and ankle braces, they are still important. Their importance is especially amplified at higher levels of play, as players tend to dive more when the match they are in is more competitive. At lower levels of play, players dive less, so elbow pads aren't as important. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleFingerTape"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="FINGER TAPE"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentFingerTape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fingertape"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Finger tape is used often in many other sports along with volleyball. Its main purpose in volleyball is to protect the fingers from getting hurt when hitting or blocking the ball. While finger tape isn't considered necessary for volleyball players, it is important, especially for players who have suffered finger injuries in the past."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleFloorTape"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="FLOOR TAPE"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentFloorTape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/floortape"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          While volleyball floor tape is mostly used to mark lines on the court, it can have other uses as well. Coaches can use floor tape to mark places for players to stand during practices. It is a great purchase for both players and coaches to help with practice. While black is used usually to mark lines, other colors can be purchased to stand out more when using to practice. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleJersey"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="JERSEY"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentJersey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/jersey"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          The typical volleyball jersey is a sleeveless athletic shirt, but long sleeve jerseys are sometimes worn. They usually have a number on the front and back, and the team name on the front as well. The colors will vary depending on the team. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleKneePad"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="KNEE PAD"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentKneePad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/kneepad"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Knee pads are considered necessary at most levels of volleyball. A lot of players kneel to get the ball at lower angles, so knee pads are important to prevent bruising and floor burns and make players more comfortable. Younger players who are inexperienced should invest in thicker knee pads, while older, more experienced players can invest in thinner knee pads, as they are more controlled with their movement while playing. The circumference of knee pads ranges from an extremely small 10 inches to an extremely large size of 20 inches.  "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titlePenaltyCard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="PENALTY CARDS"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentPenaltyCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/penaltycards"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Similar to , volleyball has yellow and red cards. However, they have a slightly different meaning. Yellow cards are considered a warning to players if they are behaving poorly, and there is no . If a player continues to disrupt play, they will receive a red card and this means there will be a penalty. Their team may lose the point or the serve if they have possession. If the  holds up both a red and yellow card, this means that either a player or coach has been asked to leave the court for the rest of the set."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titlePoles"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="POLES"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentPoles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/poles"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Typical volleyball net poles are between 10.5 feet and 16 feet tall. They are usually made with steel or aluminum, with the idea that the poles can stand tension and stress during volleyball matches. While poles don't affect a volleyball match itself, they are obviously important considering they hold up the net.  "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleRecoveryGear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="RECOVERY GEAR"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentRecoveryGear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/recoverygear"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          A typical piece of recovery gear worn by volleyball players is compression sleeves for the knees. Considering volleyball players move around and bend their knees often to hit the ball, the knees receive the most use. Recovery gear is important for individual players at higher levels who will be playing many matches over a short period of time."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleRotationLocator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="ROTATION LOCATOR"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentRotationLocator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/rotationlocator"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          A  locator is commonly used to track multiple things throughout volleyball matches. The rotation locator is mainly used to track where players should rotate to in  of positions, and tracks substitutions and new players' positioning. Some rotation locators also keep track of  for each team using numbered squares and a dry erase marker. Rotation locators are a great buy for both volleyball coaches and referees. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleScoreCard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="SCORECARDS"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentScoreCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/scorecards"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Scorecards are used to keep score during volleyball matches. They are made up of a board with colored cards on them to signify two different teams. The cards flip over the board to reveal different numbers. Scorecards probably won't be purchased by individual players, but can be purchased by coaches for scrimmages. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleServingMachines"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="SERVING MACHINES"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentServingMachines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/servingmachine"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Serving machines are great for both individual players to practice and teams to practice volleyball. This machine is similar to a pitching machine, and can be used to practice serve-receive or digging. For a volleyball serving machine to really work well, it needs to have an adjustable release point, adjustable velocities, and adjustable spin. Essentially, it needs to be able to provide all the types of shots a player may face during a match. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleShoes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="SHOES"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentShoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/shoes"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Volleyball shoes have a gum rubber sole, and are designed for lateral movement. The midsole sole is usually made of foam, while the back of the sole is usually made of mesh or nylon. A normal  shoe can work for recreational play, but if you are looking to join a team, you should invest in a pair of volleyball shoes. "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/titleWaterBottle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="WATER BOTTLE"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/contentWaterBottle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/macaroni_ch">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/waterbottle"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="          Any athletic water bottle will suffice during a volleyball game. Individual players having their own water bottles is good for practicing, while coaches also should buy water bottles for players on their teams. As is with any sport or physical activity, drinking water is important to stay hydrated and maintain energy levels."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catskill_white"
+    tools:context=".FacilitiesLineContainer">
+
+
+     <View
+         android:id="@+id/header"
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:background="@color/cloud_burst"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/lCBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="18dp"
+         android:fontFamily="@font/norwester"
+         android:text="LINES IN THE COURT"
+         android:textColor="@color/catskill_white"
+         android:textSize="30sp"
+         app:layout_constraintBottom_toBottomOf="@+id/header"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.562"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0" />
+
+     <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="370dp"
+         android:layout_height="270dp"
+         android:layout_marginTop="70dp"
+         android:scaleType="fitXY"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.497"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/lines" />
+
+      <ScrollView
+          android:id="@+id/scrollView"
+          android:layout_width="340dp"
+          android:layout_height="340dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginRight="16dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <Button
+                   android:id="@+id/titleService"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:background="@drawable/button"
+                   android:fontFamily="@font/barlowsemicondensedbold"
+                   android:padding="5dp"
+                   android:text="SERVICE LINE"
+                   android:textColor="@color/cloud_burst"
+                   android:textSize="22sp"
+                   android:textStyle="bold"
+                   app:backgroundTint="@null" />
+                   <TextView
+                       android:id="@+id/contentService"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/macaroni_ch"
+                       android:fontFamily="@font/glacialindifferenceregular"
+                       android:justificationMode="inter_word"
+                       android:padding="15dp"
+                       android:text="- The area from which the server may serve the ball, its is marked 10 feet inside the right sideline on each back line."
+                       android:textColor="@color/black"
+                       android:textSize="16sp" />
+
+               <Button
+                   android:id="@+id/titleCenter"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="15dp"
+                   android:background="@drawable/button"
+                   android:fontFamily="@font/barlowsemicondensedbold"
+                   android:padding="5dp"
+                   android:text="CENTER LINE"
+                   android:textColor="@color/cloud_burst"
+                   android:textSize="22sp"
+                   android:textStyle="bold"
+                   app:backgroundTint="@null" />
+               <TextView
+                   android:id="@+id/contentCenter"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/macaroni_ch"
+                   android:fontFamily="@font/glacialindifferenceregular"
+                   android:justificationMode="inter_word"
+                   android:padding="15dp"
+                   android:text="- It is marked at the center of the court dividing it equally into 30 feet squares (9 meter), above which the net is placed."
+                   android:textColor="@color/black"
+                   android:textSize="16sp" />
+
+               <Button
+                   android:id="@+id/titleAttack"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="15dp"
+                   android:background="@drawable/button"
+                   android:fontFamily="@font/barlowsemicondensedbold"
+                   android:padding="5dp"
+                   android:text="ATTACK LINE"
+                   android:textColor="@color/cloud_burst"
+                   android:textSize="22sp"
+                   android:textStyle="bold"
+                   app:backgroundTint="@null" />
+               <TextView
+                   android:id="@+id/contentAttack"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/macaroni_ch"
+                   android:fontFamily="@font/glacialindifferenceregular"
+                   android:justificationMode="inter_word"
+                   android:padding="15dp"
+                   android:text="Attack line, whose rear edge is drawn 3 meters back from the axis of the center line, marks from the front zone."
+                   android:textColor="@color/black"
+                   android:textSize="16sp" />
+
+               <Button
+                   android:id="@+id/titleBoundary"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="15dp"
+                   android:background="@drawable/button"
+                   android:fontFamily="@font/barlowsemicondensedbold"
+                   android:padding="5dp"
+                   android:text="BOUNDARY LINE"
+                   android:textColor="@color/cloud_burst"
+                   android:textSize="22sp"
+                   android:textStyle="bold"
+                   app:backgroundTint="@null" />
+               <TextView
+                   android:id="@+id/contentBoundary"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:background="@color/macaroni_ch"
+                   android:fontFamily="@font/glacialindifferenceregular"
+                   android:justificationMode="inter_word"
+                   android:paddingLeft="15dp"
+                   android:paddingTop="15dp"
+                   android:paddingRight="15dp"
+                   android:paddingBottom="20dp"
+                   android:text="- The two sidelines and two endlines mark in the playing court."
+                   android:textColor="@color/black"
+                   android:textSize="16sp" />
+                        </LinearLayout>
+                </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

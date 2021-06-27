@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catskill_white"
+    tools:context=".FacilitiesVCourtContainer">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cloud_burst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageButton
+        android:id="@+id/vCBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="VOLLEYBALL COURT"
+        android:textColor="@color/catskill_white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="370dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/court" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/titleCourt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:padding="5dp"
+                android:text="COURT"
+                android:textColor="@color/cloud_burst"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentCourt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:padding="15dp"
+                android:justificationMode="inter_word"
+                android:text="- The playing court rectangle is measuring 18 x 9 meters, surrounded by a free zone, which is a minimum of 3m wide on all sides."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titlePlayingArea"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:padding="5dp"
+                android:text="PLAYING AREA"
+                android:textColor="@color/cloud_burst"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentPlayingArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:padding="15dp"
+                android:text="- Includes the playing court and the free zone which is a minimum of 3m wide on all sides.\n- It shall be rectangular and symmetrical"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titleDimensions"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:padding="5dp"
+                android:text="DIMENSIONS"
+                android:textColor="@color/cloud_burst"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentDimensions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:padding="15dp"
+                android:text="- The playing court rectangle is measuring 18 x 9 meters, surrounded by a free zone, which is a minimum of 3m wide on all sides."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/titlePlayingSurface"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/barlowsemicondensedbold"
+                android:padding="5dp"
+                android:text="PLAYING SURFACE"
+                android:textColor="@color/cloud_burst"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/contentPlayingSurface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/macaroni_ch"
+                android:layout_marginBottom="40dp"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/glacialindifferenceregular"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="20dp"
+                android:text="- Must be flat, horizontal and uniform.\n- It must not present any danger of injury to the players."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

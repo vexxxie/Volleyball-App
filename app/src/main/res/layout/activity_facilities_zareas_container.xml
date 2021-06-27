@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacilitiesZAreasContainer">
+
+
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cloud_burst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageButton
+        android:id="@+id/zAreasBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/norwester"
+            android:text="ZONE AND AREAS"
+            android:textColor="@color/catskill_white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.562"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="370dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/zoneareas" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="340dp"
+            android:layout_height="330dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/titleFrontZone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="FRONT ZONE"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/contentFrontZone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="- It is limited by the axis of the center line and the rear edge of the attack line.\n- It is also considered to extend beyond the side lines to the end of the free zone. "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titleServiceZone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="SERVICE ZONE"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+                <TextView
+                    android:id="@+id/contentServiceZone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="- It is 9 meter wide behind each end line.\n- It laterally limited by two short lines.\n- It extends to the end of the free zone."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titleSubstitutionZone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="SUBSTITUTION ZONE"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+                <TextView
+                    android:id="@+id/contentSubstitutionZone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="- It is limited by the extension of both attach lines up to the scorer’s table."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titleLibero"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="LIBERO REPLACEMENT ZONE"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+                <TextView
+                    android:id="@+id/contentLibero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="- It is a part of the free zone on the side of the team benches.\n- It is limited by the extension of the attack line up to the end line."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titleWarmUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="WARM-UP AREA"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/contentWarmUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:text="- (For FIVB, World and Official Competitions)\n- It has a sized of approximately 3x3 meters located in both of the bench-side corners, outside the free zone."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/titlePenalty"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/barlowsemicondensedbold"
+                    android:padding="5dp"
+                    android:text="CENTER LINE"
+                    android:textColor="@color/cloud_burst"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+                <TextView
+                    android:id="@+id/contentPenalty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/macaroni_ch"
+                    android:fontFamily="@font/glacialindifferenceregular"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="20dp"
+                    android:text="- It has sized approximately 1x1 meter equipped with two chairs, located in the control area.\n- It is also limited by a 5 centimeters wide red line"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

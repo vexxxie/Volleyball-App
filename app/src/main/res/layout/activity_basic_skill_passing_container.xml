@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catskill_white"
+    tools:context=".BSPassingContainer">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cloud_burst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/skillBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="PASSING SKILLS"
+        android:textColor="@color/catskill_white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="340dp"
+        android:layout_height="620dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/titleOverhand"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/barlowsemicondensedbold"
+            android:gravity="start"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="OVERHAND RECEIVE"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/contentOverhand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/macaroni_ch"
+            android:fontFamily="@font/glacialindifferenceregular"
+            android:justificationMode="inter_word"
+            android:padding="15dp"
+            android:text="While the underhand receive is the ideal approach to making a pass after the opposing team puts it over the net, it is not always possible. Sometimes a spike or serve will be higher than the receiver anticipated, and with a ball coming right at their chest or head at full speed, they do not always have time to readjust for an underhand receive. In these situations, an overhand receive is ideal.  "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/titleUnderhand"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/barlowsemicondensedbold"
+            android:gravity="start"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="UNDERHAND RECEIVE"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+        <TextView
+            android:id="@+id/contentUnderhand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/macaroni_ch"
+            android:fontFamily="@font/glacialindifferenceregular"
+            android:justificationMode="inter_word"
+            android:padding="15dp"
+            android:text="This is the common technique used in volleyball in order to receive the ball, done by clasping one's hands in front of them and aligning their thumbs pointing straight forward. This creates a flat surface, making it easier to control the ball's trajectory when received. While this is a  move, the difficulty of the actual receive depends on the ball hit over, an underhand serve from a beginner is infinitely easier to receive than a spike from a professional."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/titleSet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/barlowsemicondensedbold"
+            android:gravity="start"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="SET"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+        <TextView
+            android:id="@+id/contentSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/macaroni_ch"
+            android:fontFamily="@font/glacialindifferenceregular"
+            android:justificationMode="inter_word"
+            android:padding="15dp"
+            android:text="This is one of the more niche skills in volleyball, as only the setter has to set the ball during the game. A set is a lofted pass that peaks above the net, ideally around the height that the spikers hand can reach at a full powered jump.  "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

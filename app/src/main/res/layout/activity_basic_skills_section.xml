@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catskill_white"
+    tools:context=".BS_BasicSkillsSection">
+
+
+        <View
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/cloud_burst"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_back_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/norwester"
+            android:text="BASIC SKILLS"
+            android:textColor="@color/catskill_white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/servingSkill"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_section"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/leaguespartanbold"
+            android:gravity="start"
+            android:paddingTop="17dp"
+            android:text="SERVING SKILLS"
+            android:textAlignment="viewStart"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:layout_constraintVertical_bias="0.089" />
+
+        <Button
+            android:id="@+id/passingSkill"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_section"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/leaguespartanbold"
+            android:gravity="start"
+            android:paddingTop="17dp"
+            android:text="PASSING SKILLS"
+            android:textAlignment="viewStart"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/servingSkill" />
+
+        <Button
+            android:id="@+id/hittingSkill"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_section"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/leaguespartanbold"
+            android:gravity="start"
+            android:paddingTop="17dp"
+            android:text="HITTING SKILLS"
+            android:textAlignment="viewStart"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passingSkill" />
+
+    <Button
+        android:id="@+id/blockingSkill"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_section"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/leaguespartanbold"
+        android:gravity="start"
+        android:paddingTop="17dp"
+        android:text="BLOCKING SKILLS"
+        android:textAlignment="viewStart"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hittingSkill" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
